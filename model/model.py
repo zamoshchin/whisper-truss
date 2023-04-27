@@ -1,3 +1,4 @@
+from pathlib import Path
 from tempfile import NamedTemporaryFile
 from typing import Dict
 
@@ -8,11 +9,12 @@ import whisper
 
 class Model:
     def __init__(self, **kwargs) -> None:
+        self._data_dir = kwargs["data_dir"]
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self._model = None
 
     def load(self):
-        self._model = whisper.load_model("small", self.device)
+        self._model = whisper.load_model(Path(str(self._data_dir)) / "models" / "small.pt", self.device)
         return
 
     def preprocess(self, request: Dict) -> Dict:

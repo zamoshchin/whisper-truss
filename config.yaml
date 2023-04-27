@@ -1,4 +1,5 @@
 bundled_packages_dir: packages
+data_dir: data
 description: null
 environment_variables: {}
 examples_filename: examples.yaml
@@ -23,3 +24,6 @@ secrets: {}
 spec_version: 2.0
 system_packages:
 - ffmpeg
+external_data:
+  - url: https://baseten-public.s3.us-west-2.amazonaws.com/models/whisper/small.pt
+    local_data_path: models/small.pt
