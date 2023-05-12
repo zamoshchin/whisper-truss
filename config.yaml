@@ -1,6 +1,6 @@
 bundled_packages_dir: packages
 data_dir: data
-description: Transcribe audio files with whisper.
+description: Transcribe audio files across multiple languages.
 environment_variables: {}
 examples_filename: examples.yaml
 input_type: Any
