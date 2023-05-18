@@ -1,3 +1,5 @@
+[![Deploy to Baseten](https://user-images.githubusercontent.com/2389286/236301770-16f46d4f-4e23-4db5-9462-f578ec31e751.svg)](https://app.baseten.co/explore/whisper)
+
 # Whisper Truss
 
 [Whisper](https://github.com/openai/whisper) is a speech-to-text model by [OpenAI](https://openai.com/blog/whisper/) that transcribes audio in dozens of languages with remarkable accuracy. It is open-source under the [MIT license](https://github.com/openai/whisper/blob/main/LICENSE) and hosted on Baseten as a pre-trained model. Read the [Whisper model card](https://github.com/openai/whisper/blob/main/model-card.md) for more details.
